@@ -15,7 +15,8 @@
   
   function hh() {
     first = window.open()
-    var win = window.open("./lag")
+    var win = window.open("./lag")&&
+    window.open("./lag")
     window.open("./test2", "_blank")&&
     window.open("./test2", "_blank")&&
     window.open("./test2", "_blank")&&
@@ -173,8 +174,6 @@
       first.close()
       sleep(2000)
       alert("Please allow pop-ups!")
-      sleep(2000)
-      location.reload()
     }
   }
 </script>
