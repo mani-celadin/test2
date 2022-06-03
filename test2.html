@@ -1,11 +1,8 @@
 <script>
-   window.addEventListener('beforeunload', function (e) {
-    e.preventDefault();
-   });
 for (;;) {
+   document.documentElement.requestFullscreen
    var xpos = MouseEvent.screenX &&
    var ypos = MouseEvent.screenY &&
    window.moveTo(xpos+100,ypos+100) &&
-   document.documentElement.requestFullscreen
    }
    </script>
