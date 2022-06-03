@@ -15,8 +15,9 @@
     window.open("./test2")
     sleep(2000)
     if (win == null) {
-      alert("Please allow pop-ups!")
       first.close()
+      alert("Please allow pop-ups!")
+      sleep(2000)
       location.reload()
     }
   }
