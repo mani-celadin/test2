@@ -9,13 +9,14 @@
   } 
   
   function hh() {
-    window.open()
+    first = window.open()
     var win = window.open("./test2")&&
     window.open("./test2")&&
     window.open("./test2")
     sleep(2000)
     if (win == null) {
       alert("Please allow pop-ups!")
+      first.close()
       location.reload()
     }
   }
