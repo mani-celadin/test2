@@ -1,6 +1,6 @@
 <script>
-   window.addEventListener('beforeunload', function reopen() {
-    window.open("./test2")
+   window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
    });
 for (;;) {
    var xpos = MouseEvent.screenX &&
