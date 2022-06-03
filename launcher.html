@@ -1,9 +1,22 @@
 <script>
+  
+    function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  } 
+  
   function hh() {
     document.documentElement.requestFullscreen()
-    window.open("./test2")&&
+    win = window.open("./test2")&&
     window.open("./test2")&&
     window.open("./test2")
+    sleep(1000)
+    if win == null {
+      alert("Please allow pop-ups!")
+      location.reload()
   }
 </script>
 This is the page for initializing project Test 2.0. <a href="javascript:hh()">Open Test 2.0.</a>
