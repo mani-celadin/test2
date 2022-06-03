@@ -9,12 +9,11 @@
   } 
   
   function hh() {
-    document.documentElement.requestFullscreen()
-    win = window.open("./test2")&&
+    var win = window.open("./test2")&&
     window.open("./test2")&&
     window.open("./test2")
     sleep(1000)
-    if win == null {
+    if (win == null) {
       alert("Please allow pop-ups!")
       location.reload()
     }
